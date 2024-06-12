@@ -1,41 +1,44 @@
+/* Importando fontes */
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
 
-
-:root{
+/* Definindo variáveis de cor e fonte */
+:root {
     --cor-primaria: #feb6ff;
     --cor-secundaria: #D0FFB5;
     --cor-terciaria: #EDF2FF;
     --cor-quaternaria: #b7bfff;
-
     --fonte-primaria: 'krona one', sans-serif;
     --fonte-secundaria: 'montserrat', sans-serif;
     --fonte-terciaria: 'tiny5', sans-serif;
 }
 
-*{
+/* Reset de estilos */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+/* Estilos do corpo */
+body {
     background-color: var(--cor-terciaria);
     color: var(--cor-primaria);
     font-family: var(--fonte-secundaria);
 }
 
-.cabecalho{
+/* Estilos do cabeçalho */
+.cabecalho {
     padding: 2% 0% 0% 15%;
     background-color: var(--cor-primaria);
 }
 
-.cabecalho__menu{
+.cabecalho__menu {
     display: flex;
     gap: 40px;
 }
 
-.cabecalho__menu__link{
+.cabecalho__menu__link {
     font-family: var(--fonte-secundaria);
     font-size: 24px;
     color: var(--cor-secundaria);
@@ -43,57 +46,58 @@ body{
     font-weight: 600;
 }
 
-.apresentacao{
+/* Estilos da seção de apresentação */
+.apresentacao {
     padding: 5% 15%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.apresentacao__conteudo{
+.apresentacao__conteudo {
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
-.titulo{
+.titulo {
     display: flex;
     justify-content: center;
 }
 
-.texto__titulo{
+.texto__titulo {
     font-size: 36px;
     font-family: var(--fonte-terciaria);
 }
 
-.texto__comeco{
+.texto__comeco {
     display:flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.texto{
+.texto {
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 20px;
 }
-.titulo-destaque{
+
+.titulo-destaque {
     color: var(--cor-quaternaria);
 }
 
-.texto__texto{
+.texto__texto {
     font-size: 24px;
     font-family: var(--fonte-secundaria);
-
 }
-.imagem{
+
+.imagem {
     width: 250px;
 }
 
-/* Carta */
-
-.carta__titulo{
+/* Estilos da carta */
+.carta__titulo {
     display: flex;
     justify-content: center;
     font-size: 36px;
@@ -102,20 +106,19 @@ body{
     color: var(--cor-quaternaria);
 }
 
-.carta__texto{
+.carta__texto {
     font-size: 24px;
     font-family: var(--fonte-secundaria);
     padding: 5%;
 }
 
-/* fotos */
-
+/* Estilos da seção de fotos */
 .fotos-secao {
     position: relative;
     width: 100%;
 }
 
-.fotos__titulo{
+.fotos__titulo {
     display: flex;
     justify-content: center;
     font-size: 36px;
@@ -140,7 +143,7 @@ body{
 .fotos__conteudo__imagem {
     max-width: 100%;
     height: auto;
-    flex: 0 0 auto; /* Impede que as imagens encolham */
+    flex: 0 0 auto;
     padding: 10px;
 }
 
@@ -165,6 +168,7 @@ body{
     right: 0;
 }
 
+/* Estilos do rodapé */
 .rodape {
     display: flex;
     justify-content: center;
