@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Dia dos Namorados</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html">Home</a>
+            <a class="cabecalho__menu__link" href="#carta">Carta</a>
+            <a class="cabecalho__menu__link" href="#fotos">Fotos</a>
+        
+    </header>
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <div class="titulo">
+                <h1 class="texto__titulo">Feliz Dia dos Namorados</h1>
+            </div>
+            <div class="texto__comeco">
+                <div class="texto">
+                    <p class="texto__texto"><strong class="titulo-destaque">Oi, meu bem!</strong> Fiz essa surpresa e acho que você vai gostar...Eu te amo demais demais!</p>
+                </div>
+                <img class="imagem" src="./img/Imagem.png" alt="Meme apaixonado">
+            </div>
+            <div id="carta" class="carta">
+                <h2 class="carta__titulo">Cartinha</h2>
+                <p class="carta__texto">Oi, meu amor! Eu te amo muito e quero passar o resto da minha vida com você. Você é a pessoa mais incrível que eu já conheci e eu sou muito feliz por ter você na minha vida, obrigada por ser a melhor namorada do mundo. Eu te amo muito, muito, muito! Feliz Dia dos Namorados!</p>
+            </div>
+            <div id="fotos" class="fotos-secao">
+                <h2 class="fotos__titulo">Fotos</h2>
+                <div class="fotos-container">
+                    <button class="fotos__botao" onclick="mudarFotos(-1)">❮</button>
+                    <div class="fotos__conteudo">
+                        <img class="fotos__conteudo__imagem" src="./img/foto1.jpg" alt="Foto de um casal apaixonado">
+                        <img class="fotos__conteudo__imagem" src="./img/foto2.jpg" alt="Foto de um casal apaixonado">
+                        <img class="fotos__conteudo__imagem" src="./img/foto3.jpg" alt="Foto de um casal apaixonado">
+                        <img class="fotos__conteudo__imagem" src="./img/foto4.jpg" alt="Foto de um casal apaixonado">
+                        <img class="fotos__conteudo__imagem" src="./img/foto5.jpg" alt="Foto de um casal apaixonado">
+                        <img class="fotos__conteudo__imagem" src="./img/foto6.jpg" alt="Foto de um casal apaixonado">
+                    </div>
+                    <button class="fotos__botao" onclick="mudarFotos(1)">❯</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p class="rodape__texto">Feito com ❤️</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
